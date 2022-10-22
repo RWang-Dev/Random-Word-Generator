@@ -57,5 +57,4 @@ public class LetterSample {
         }
         return samples;
     }
-    
 }

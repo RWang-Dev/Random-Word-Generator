@@ -1,6 +1,5 @@
 package Project3;
 
-
 //Run this file to generate the random words
 public class GibberisherMain {
 
@@ -29,7 +28,6 @@ public class GibberisherMain {
     }
 
     public static void main(String[] args) {
-
         printSome(runGibberisherTest(4, 2000), 20);
     }
 }

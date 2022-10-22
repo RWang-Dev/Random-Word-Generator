@@ -37,8 +37,7 @@ public class Gibberisher {
                     CharBag modelGet = model.get(samples[j].getSegment());
                     modelGet.add(samples[j].getNextLetter());                    
                     model.put(samples[j].getSegment(), modelGet);   
-               }
-               
+               }        
             }
         }
     }
@@ -79,11 +78,7 @@ public class Gibberisher {
             }else if(word.charAt(word.length()-1) != '.'){
                 check = true;
             }else check = false;
-
-
         }
         return word.substring(0, word.length()-1);
-
     }
-    
 }

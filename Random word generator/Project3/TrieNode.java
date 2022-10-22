@@ -54,7 +54,6 @@ public class TrieNode<T> {
         }else{
             return children[index];
         }
-
     }
 
     /*
@@ -70,8 +69,4 @@ public class TrieNode<T> {
         }
         return size +1;
     }
-    
-
-
-
 }

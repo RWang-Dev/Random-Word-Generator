@@ -19,15 +19,12 @@ public class Dictionary {
             scan = new Scanner(new FileInputStream("words.txt"));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
-        }
-
-        
+        }     
         List<String> words = new ArrayList<>();
         while(scan.hasNext()) {
             words.add(cleanup(scan.next()));
         }
         return words.toArray(new String[0]);
-
     }
 
     private static String cleanup(String input) {
@@ -55,23 +52,4 @@ public class Dictionary {
             System.out.println("\"" + words[i] + "\"");
         }
     }
-    /*
-62876
-"Aachen"
-"Marrakesh"
-"alarming"
-"bouquets"
-"concave"
-"diminishes"
-"facade"
-"hallmarking"
-"iodizes"
-"misbehave"
-"patellae"
-"quizzes"
-"scragglier"
-"stipulating"
-"tummies"
-"zoological"
-     */
 }

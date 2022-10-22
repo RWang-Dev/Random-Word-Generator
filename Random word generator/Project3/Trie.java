@@ -23,17 +23,14 @@ public class Trie<T> {
         if(word.equals("")){
             return root;
         }
-        for(int i = 0; i<word.length(); i++){
-            
+        for(int i = 0; i<word.length(); i++){ 
             if(i == 0){
                 child = root.getChild(word.charAt(i));
                 
             }else{
                 child = child.getChild(word.charAt(i));
             }
-            
-        }
-        
+        } 
         return child;
     }
 

@@ -36,7 +36,6 @@ public class CharBag {
                 in = true;
                 
             }
-
         }
         if(!in){
             bag[26] ++;
@@ -63,7 +62,6 @@ public class CharBag {
             else if(c == ALPHA.charAt(i)){
                 index = i;
                 in = true;
-                
             }
         }
         if(in && bag[index] > 0){
@@ -88,8 +86,7 @@ public class CharBag {
             }
             else if(c == ALPHA.charAt(i)){
                 index = i;
-                in = true;
-                
+                in = true;    
             }
         }
         if(!in){
@@ -123,8 +120,7 @@ public class CharBag {
                 output += alpha.charAt(i) + ":" + Integer.toString(bag[i]) + "}";
             } else{
                 output += alpha.charAt(i) + ":" + Integer.toString(bag[i]) + ", ";
-            }
-            
+            }      
         }
         return output;     
     }
@@ -149,12 +145,7 @@ public class CharBag {
             if(count < 0){
                 return alpha.charAt(i);
             }
-        }
-        
+        }   
         return '.';
-    
     }
-
-
-
 }
